@@ -1,0 +1,23 @@
+*** Reading local file: /Users/kit/airflow/logs/hello_world/print_excl2/2021-11-15T23:48:40.634716+00:00/1.log
+[2021-11-16, 06:48:48 UTC] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: hello_world.print_excl2 manual__2021-11-15T23:48:40.634716+00:00 [queued]>
+[2021-11-16, 06:48:48 UTC] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: hello_world.print_excl2 manual__2021-11-15T23:48:40.634716+00:00 [queued]>
+[2021-11-16, 06:48:48 UTC] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-11-16, 06:48:48 UTC] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-11-16, 06:48:48 UTC] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-11-16, 06:48:48 UTC] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): print_excl2> on 2021-11-15 23:48:40.634716+00:00
+[2021-11-16, 06:48:48 UTC] {standard_task_runner.py:52} INFO - Started process 11966 to run task
+[2021-11-16, 06:48:48 UTC] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'hello_world', 'print_excl2', 'manual__2021-11-15T23:48:40.634716+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/hello_world.py', '--cfg-path', '/var/folders/7l/9n8tlhts6wnd69nb930sz2hr0000gn/T/tmp_k8q3cm7', '--error-file', '/var/folders/7l/9n8tlhts6wnd69nb930sz2hr0000gn/T/tmpdvrb_c5t']
+[2021-11-16, 06:48:48 UTC] {standard_task_runner.py:77} INFO - Job 65: Subtask print_excl2
+[2021-11-16, 06:48:48 UTC] {logging_mixin.py:109} INFO - Running <TaskInstance: hello_world.print_excl2 manual__2021-11-15T23:48:40.634716+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2021-11-16, 06:48:48 UTC] {taskinstance.py:1427} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=hello_world
+AIRFLOW_CTX_TASK_ID=print_excl2
+AIRFLOW_CTX_EXECUTION_DATE=2021-11-15T23:48:40.634716+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-11-15T23:48:40.634716+00:00
+[2021-11-16, 06:48:48 UTC] {python.py:152} INFO - Done. Returned value was: !
+[2021-11-16, 06:48:48 UTC] {taskinstance.py:1270} INFO - Marking task as SUCCESS. dag_id=hello_world, task_id=print_excl2, execution_date=20211115T234840, start_date=20211115T234848, end_date=20211115T234848
+[2021-11-16, 06:48:48 UTC] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-11-16, 06:48:48 UTC] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
