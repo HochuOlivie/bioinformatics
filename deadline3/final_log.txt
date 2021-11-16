@@ -1,0 +1,23 @@
+*** Reading local file: /Users/kit/airflow/logs/hello_world/evaluation/2021-11-16T01:58:03.114138+00:00/1.log
+[2021-11-16, 08:59:54 UTC] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: hello_world.evaluation manual__2021-11-16T01:58:03.114138+00:00 [queued]>
+[2021-11-16, 08:59:54 UTC] {taskinstance.py:1035} INFO - Dependencies all met for <TaskInstance: hello_world.evaluation manual__2021-11-16T01:58:03.114138+00:00 [queued]>
+[2021-11-16, 08:59:54 UTC] {taskinstance.py:1241} INFO - 
+--------------------------------------------------------------------------------
+[2021-11-16, 08:59:54 UTC] {taskinstance.py:1242} INFO - Starting attempt 1 of 1
+[2021-11-16, 08:59:54 UTC] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2021-11-16, 08:59:54 UTC] {taskinstance.py:1262} INFO - Executing <Task(PythonOperator): evaluation> on 2021-11-16 01:58:03.114138+00:00
+[2021-11-16, 08:59:54 UTC] {standard_task_runner.py:52} INFO - Started process 18488 to run task
+[2021-11-16, 08:59:54 UTC] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'hello_world', 'evaluation', 'manual__2021-11-16T01:58:03.114138+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/hello_world.py', '--cfg-path', '/var/folders/7l/9n8tlhts6wnd69nb930sz2hr0000gn/T/tmpn58irq_s', '--error-file', '/var/folders/7l/9n8tlhts6wnd69nb930sz2hr0000gn/T/tmptj68frxe']
+[2021-11-16, 08:59:54 UTC] {standard_task_runner.py:77} INFO - Job 95: Subtask evaluation
+[2021-11-16, 08:59:54 UTC] {logging_mixin.py:109} INFO - Running <TaskInstance: hello_world.evaluation manual__2021-11-16T01:58:03.114138+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2021-11-16, 08:59:54 UTC] {taskinstance.py:1427} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=hello_world
+AIRFLOW_CTX_TASK_ID=evaluation
+AIRFLOW_CTX_EXECUTION_DATE=2021-11-16T01:58:03.114138+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-11-16T01:58:03.114138+00:00
+[2021-11-16, 08:59:54 UTC] {python.py:152} INFO - Done. Returned value was: not OK
+[2021-11-16, 08:59:54 UTC] {taskinstance.py:1270} INFO - Marking task as SUCCESS. dag_id=hello_world, task_id=evaluation, execution_date=20211116T015803, start_date=20211116T015954, end_date=20211116T015954
+[2021-11-16, 08:59:54 UTC] {local_task_job.py:154} INFO - Task exited with return code 0
+[2021-11-16, 08:59:54 UTC] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
